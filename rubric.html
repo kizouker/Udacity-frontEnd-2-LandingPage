@@ -1,89 +1,180 @@
-Udacity Logo
-Logout
-PROJECT SPECIFICATION
-Landing Page
+<html>
 
-Interface and Architecture
+<head>
+<style>
+html{
 
-CRITERIA
-MEETS SPECIFICATIONS
-Architecture
+    font-family: sans-serif;
+    font-size:medium;
+}
 
-The project should have a structure like the one shown below. All files shown must be present and the app must successfully render a home page with clear design and functionality added when index.html is loaded in the browser. No errors should display in console.
 
-css
-- styles.css    
-index.html
-js
-- app.js
-README.md
-Usability
+.feature{
+    font-weight: bolder;
+}
 
-All features are usable across modern desktop, tablet, and phone browsers.
-A Responsive layout of the landing page should be created to use across all devices.
-Make sure that the navigation bar is responsive too across all these devices.
-Responsiveness can be verified by inspecting the landing page using the Developer Tools option on Google Chrome Browser.
-Styling
+.firstheading{
+    font-size: larger;
+    font-weight: bolder;
+}
 
-Styling should be added for active states.
-Set CSS class active state when the element is in the viewport.
-The active section in the Navbar should be highlighted.
-HTML Structure
+.secondheading{
+    font-size: medium;
+    font-weight: bold;
+    
+}
+.architecture{
+    display: grid;
+    gap: 1w;
+    grid-template-columns: 85vw;
+    background-color: aquamarine;
+}
 
-There are at least 4 sections that have been added to the page.
+.usability{
+    background-color: pink;
+}
 
-Landing Page Behavior
+.styling{
 
-CRITERIA
-MEETS SPECIFICATIONS
-Navigation
+    background-color: yellowgreen
+}
 
-Navigation is built dynamically as an unordered list. Start with empty ul and dynamically build navigation using Append, appendChild, and innerHTML.
+.navigation{
+    background-color:brown;
+}
 
-Section Active State
+table{
+    padding: 2vh;
+    margin: 1vw;
+}
+th{
+    text-align: left;
+}
 
-It should be clear which section is being viewed while scrolling through the page.
 
-Tip: Detect the element location relative to the viewport using .getBoundingClientRect() built-in function.
+</style>
+</head>   
+<body>
+</body>
 
-Scroll to Anchor
 
-When clicking an item from the navigation menu, the link should scroll to the appropriate section.
-You can use the following methods to fulfill this criterion:
+<div class="firstheading">Architecture</div>
+<div class="architecture">
+    The project should have a structure like the one shown below. All files shown must be present and the app must successfully render a home page with clear design and functionality added when index.html is loaded in the browser. No errors should display in console.
+</div>
 
-Use addEventListener('click',....) to listen to the click event.
-Use preventDefault() as if there is a default event occurring we need to stop that.
-There are several javascript methods for scrolling, scroll(), scrollBy(), and scrollIntoView() are all acceptable.
-A smooth scrolling behavior is expected in the project.
-Documentation
+<div class="usability">
+<div class="firstheading">Usability</div>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Feature</th>
+        <th>Done</th>
+    </tr>
 
-CRITERIA
-MEETS SPECIFICATIONS
-README
+    <tr>
+        <td><div class="feature">U_1</div></td>
+        <td>            
+            All features are usable across modern desktop, tablet, 
+            and phone browsers.
+        </td>
+        <td>done</td>
+    </tr>
+    <tr>
+        <td><div class="feature">U_2</div></td>
+        <td>A Responsive layout of the landing page should be created to use across all devices.</li></td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+</td>
+</td>
+<td>
+    <tr></tr>
+</td>
 
-The ReadMe file should replace the given texts on the README template with specific information for this project. It doesn’t have to be thorough, but should have some basic information, eg. project description, usage, dependencies, and use correct the markdown syntax.
+</table>
+<ul>
+    <li></li>
+    <li>
+     
+    <li><div class="feature">U_3</div>
+        Make sure that the navigation bar is responsive too across all these devices.</li>
+    <li><div class="feature">U_4</div>
+        Responsiveness can be verified by inspecting the landing page using the Developer Tools option on Google Chrome Browser.</li>
+</ul>
+</div>
+   <div class="firstheading">Styling</div>
+   <div class="styling">
+   <ul>
+        <li><div class="feature">S_1:</div>
+            Styling should be added for active states.</li>
+        <li><div class="feature">S_2</div> 
+        Set CSS class active state when the element is in the viewport.</li>
+        <li><div class="feature">S_3</div>
+            The active section in the Navbar should be highlighted.</li>
+    </ul>
+</div> 
 
-References: markdown guide and example of README contents
 
+
+<div class="firstheading">HTML Structure</div>
+
+    <div class="feature">H_1:</div>
+    There are at least 4 sections that have been added to the page.
+    <div class="firstheading">Landing Page Behavior</div>
+<div class="navigation">
+    <div class="secondheading">Navigation</div>
+        <div class="feature">B_1</div>Navigation is built dynamically as an unordered list. Start with empty <code>ul</code> and dynamically build navigation using <code>Append</code>, <code>appendChild</code>, and <code>innerHTML</code>.
+        <div class="secondheading">Section Active state</div>
+         <div class="feature">B_2</div>
+        It should be clear which section is being viewed while scrolling through the page.
+        <blockquote>
+        Tip: Detect the element location relative to the viewport using .getBoundingClientRect() built-in function.
+        </blockquote>
+ <div class="secondheading">Scroll to Anchor</div> 
+    <div class="feature">B_3</div> clicking an item from the navigation menu, the link should scroll to the appropriate section.<br>You can use the following methods to fulfill this criterion:
+    <ul>
+        <li>Use addEventListener('click',....) to listen to the click event.</li>
+        <li>Use preventDefault() as if there is a default event occurring we need to stop that.</li>
+        <li>There are several javascript methods for scrolling, scroll(), scrollBy(), and scrollIntoView() are all acceptable.</li>
+        <li>A smooth scrolling behavior is expected in the project.</li>
+    </ul>
+    
+</div>
+        <div class="firstheading">Documentation</div>
+</span> <table> <thead>  <th class="rubric-category criteria-column col-xs-3 ng-scope" ng-if="!rubric.hide_criteria"> <span translate="" class="ng-scope">Criteria</span> </th> <th class="rubric-category meets-specs-column"  (settings.showCompletedChecklist ? col-xs-6 : col-xs-7)"> <span translate="" class="ng-scope">Meets Specifications</span> </th>    </thead> <tbody>  <tr > <td >README
+   The ReadMe file should replace the given texts on the README template with specific information for this project. It doesn’t have to be thorough, but should have some basic information, eg. project description, usage, dependencies, and use correct the <strong>markdown syntax</strong>.
+References: <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">markdown guide</a> and <a href="https://github.com/navendu-pottekkat/awesome-readme/blob/master/README-template.md" target="_blank">example of README contents</a>
+ 
 Comments
+    Comments should be present at the beginning of each procedure and class.
+<blockquote>
+Bonus: Great to have comments before crucial code sections within the procedure.<br>Refer to <a href="http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#comments" target="_blank">Udacity JavaScript Style Guide - Comments</a> for standard best practices.
+</blockquote>
+   <tr > <td >Code Quality
+    Code should be formatted with consistent, logical, and easy-to-read formatting.
+<blockquote>
+Tip: Carefully follow the best practices mentioned in the Code formatting section of the <a href="http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#formatting" target="_blank">guide</a>
+</blockquote>
+  
+<div class="firstheading"></div>
+Suggestions to Make Your Project Stand Out!</h2> <div id="stand-out-text" ng-bind-html="localize(ctrl.rubric, 'stand_out', markup=true)" class="ng-binding">See the "Suggested" items section in 
+    
+    <strong>Development Strategy</strong> in the classroom.
+<ul>
+<li><div class="feature">N_1</div> Add an active state to your navigation items when a section is in the viewport.</li>
+<li><div class="feature">N_2</div>Hide fixed navigation bar while not scrolling (it should still be present on page load).<ul>
+<li>Hint: setTimeout can be used to check when the user is no longer scrolling.</li>
+</ul>
+</li>
+<li><div class="feature">N_3</div>Add a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.</li>
+<li><div class="feature">N_4</div>Update/change the design/content.</li>
+<li><div class="feature">N_5</div>Make sections collapsible.</li>
+</ul>
+</div> </div> </div> </div> </div></div>
+    </div> </div> </div>
+  </div>
 
-Comments should be present at the beginning of each procedure and class.
 
-Bonus: Great to have comments before crucial code sections within the procedure.
-Refer to Udacity JavaScript Style Guide - Comments for standard best practices.
 
-Code Quality
-
-Code should be formatted with consistent, logical, and easy-to-read formatting.
-
-Tip: Carefully follow the best practices mentioned in the Code formatting section of the guide
-
-Suggestions to Make Your Project Stand Out!
-See the "Suggested" items section in Development Strategy in the classroom.
-
-Add an active state to your navigation items when a section is in the viewport.
-Hide fixed navigation bar while not scrolling (it should still be present on page load).
-Hint: setTimeout can be used to check when the user is no longer scrolling.
-Add a scroll to top button on the page that’s only visible when the user scrolls below the fold of the page.
-Update/change the design/content.
-Make sections collapsible.
+<div class="hiddendiv common"></div></body></html>
